@@ -9,7 +9,7 @@ body {
     background-repeat: none;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 650px;
 }
 
 .seccion1 {
@@ -26,13 +26,15 @@ h1 {
     display: flex;
     justify-content: center;
     width: 50%;
+    font-size: 90px;
 }
 
 .seccion1 p {
     color: #fff;
     padding: 10px 500px;
     justify-content: center;
-    
+    text-align: center;
+
 }
 
 .seccion1 a {
@@ -41,7 +43,6 @@ h1 {
     background-color: #000;
     padding: 10px;
     border-radius: 10px;
-    opacity: 50%;
 }
 
 .seccion1 a:hover {
@@ -51,13 +52,14 @@ h1 {
 
 .calidad {
     background-color: #2b2b2b;
-    height: 350px;
+    height: 400px;
 }
 
 .calidad h2 {
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+    margin-bottom: 0;
 }
 
 .cardsCalidad {
@@ -65,22 +67,43 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 0 350px;
+    padding: 30px 350px;
     color: white;
 }
 
 .cardsCalidad div {
     width: 200px;
     height: 250px;
-    border: 1px solid #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.cardsCalidad div p {
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Seccion Productos */
+
+.tituloProductos {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+
+.tituloProductos h2 {
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .seccionProductos {
     background-color: #000;
     color: #fff;
-    padding: 150px;
+    height: 1200px;
 }
 
 .seccionProductos div a {
@@ -92,14 +115,82 @@ h1 {
     opacity: 50%;
 }
 
+.seccionProductos1, .seccionProductos2, .seccionProductos3 {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.infoProducto1, .infoProducto3 {
+    width: 50%;
+    padding: 100px;
+}
+
+.infoProducto1 h2, .infoProducto3 h2 {
+    font-weight: 300;
+    color: #ffb578;
+    padding-bottom: 20px;
+}
+
+
+.infoProducto1 p:nth-last-child(2), .infoProducto2 p:nth-last-child(2), .infoProducto3 p:nth-last-child(2) {
+    color: #ffb578;
+    font-weight: 500;
+}
+
+.btnInfo1, .btnInfo2, .btnInfo3 {
+    margin-top: 30px;
+}
+
+.btnInfo1 a, .btnInfo2 a, .btnInfo3 a {
+    width: 70px;
+    border: 3px solid #ffb578;
+}
+
+.imgProducto1 {
+    background-image: url(./imagenes/Productos/Producto1.png);
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
 .seccionProductos a:hover {
     opacity: 100%;
     transition: 1s;
 }
 
+.imgProducto2 {
+    background-image: url(./imagenes/Productos/Producto3.png);
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.infoProducto2 {
+    width: 50%;
+    padding: 100px;
+}
+
+.infoProducto2 h2 {
+    font-weight: 300;
+    color: #ffb578;
+    padding-bottom: 20px;
+}
+
+.imgProducto3 {
+    background-image: url(./imagenes/Productos/Producto2.png);
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+/* seccion qs */
 .seccionQS {
     background-color: #2b2b2b;
-    color: #fff;
+    color: #fff;      
     /* height: 350px; */
     padding: 150px;
     display: flex;
